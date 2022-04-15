@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Rad sa formularima</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form method="post" action="https://formsubmit.co/culummakarije5@gmail.com">
+			<label for="input-ime">Ime:</label>
+			<input type="text" name="ime" id="input-ime" required><br>
+			
+			<label for="i-procenat">Procenat:</label>
+			<input type="number" name="procenat" id="i-procenat"
+					step="0.01" min="0" max="1" value="0.5" required><br>
+			
+			<label for="input-email">Email:</label>
+			<input type="email" name="email" id="input-email" required><br>
+			
+			<label for="input-telefon">Telefon:</label>
+			<input type="tel" name="telefon" id="input-telefon" required><br>
+			
+			<label for="input-zaposlen">Zaposlen:</label>
+			<input type="checkbox" name="zaposlen" id="input-zaposlen" value="1"><br>
+			
+			<label>Odaberite Kategoriju:</label><br>
+			<input type="radio" name="kategorija"  value="1" checked>Kategorija 1<br>
+			<input type="radio" name="kategorija"  value="2">Kategorija 2<br>
+			<input type="radio" name="kategorija"  value="3">Kategorija 3<br>
+			<input type="radio" name="kategorija"  value="4">Kategorija 4<br>
+			<input type="radio" name="kategorija"  value="5">Kategorija 5<br>
+			
+			<label for="input-adresa">Adresa:</label><br>
+			<textarea rows="6" name="adresa" id="input-adresa" required></textarea><br>
+			
+			<label for="input-drzava">Drzava:</label>
+			<select name="drzava" id="input-drzava">
+				<option value="0001">Srbija</option>
+				<option value="0002">Crna Gora</option>
+				<option value="0003">Hrvatska</option>
+				<option value="0004">Bosna i Hercegovina</option>
+				<option value="0005">Makedonija</option>
+				<option value="0006">Slovenija</option>
+			</select><br>
+			
+			<label for="i-drzava">Drzava 2:</label>
+			<input type="text" name="drzava2" id="i-drzava" list="spisak-drzava" required>
+			<datalist id="spisak-drzava">
+				<option value="Srbija">
+				<option value="Crna Gora">
+				<option value="Hrvatska">
+				<option value="Bosna i Hercegovina">
+				<option value="Makedonija">
+				<option value="Slovenija">
+			</datalist><br>
+			
+			<label for="i-opseg">Opseg:<label>
+			<input type="range" name="opseg" id="i-opseg" min="10" max="60" step="5"><br><br>
+			
+			<button type="submit">Posalji</button>
+			<button type="reset">Ponisti</button>
+		</form>
+	</body>
+</html>
