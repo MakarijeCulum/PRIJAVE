@@ -1,62 +1,100 @@
+
+		
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Rad sa formularima</title>
+		<title>FORMULAR ZA POSAO</title>
 		<meta charset="utf-8">
+		
+		<link rel="stylesheet" href="formular.css">
 	</head>
+	
+	<style>
+		.resetbtn{
+			font-weight: 0;
+			font-size: 14px;
+			color: #fff;
+			background-color: #d62828;
+			padding: 10px 30px;
+			border: 2px solid #d62828;
+			box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+			border-radius: 1px;
+			transition : 1000ms;
+			transform: translateY(0);
+			cursor: pointer;
+		}
+
+		.resetbtn:hover{
+			transition : 1000ms;
+			padding: 10px 50px;
+			transform : translateY(-0px);
+			background-color: #d62828;
+			color: #ffffff;
+			border: solid 2px #d62828;
+		}
+		
+		.submitbtn{
+			font-weight: 0;
+			font-size: 14px;
+			color: #fff;
+			background-color: #2a9d8f;
+			padding: 10px 30px;
+			border: solid #2a9d8f 2px;
+			box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+			border-radius: 1px;
+			transition : 1000ms;
+			transform: translateY(0);
+			cursor: pointer;
+		}
+		.submitbtn:hover{
+			transition : 1000ms;
+			padding: 10px 50px;
+			transform : translateY(-0px);
+			background-color: #2a9d8f;
+			color: #ffffff;
+			border: solid 2px #2a9d8f;
+		}
+    </style>
+	
 	<body>
-		<form method="post" action="https://formsubmit.co/culummakarije5@gmail.com">
-			<label for="input-ime">Ime:</label>
-			<input type="text" name="ime" id="input-ime" required><br>
-			
-			<label for="i-procenat">Procenat:</label>
-			<input type="number" name="procenat" id="i-procenat"
-					step="0.01" min="0" max="1" value="0.5" required><br>
-			
-			<label for="input-email">Email:</label>
-			<input type="email" name="email" id="input-email" required><br>
-			
-			<label for="input-telefon">Telefon:</label>
-			<input type="tel" name="telefon" id="input-telefon" required><br>
-			
-			<label for="input-zaposlen">Zaposlen:</label>
-			<input type="checkbox" name="zaposlen" id="input-zaposlen" value="1"><br>
-			
-			<label>Odaberite Kategoriju:</label><br>
-			<input type="radio" name="kategorija"  value="1" checked>Kategorija 1<br>
-			<input type="radio" name="kategorija"  value="2">Kategorija 2<br>
-			<input type="radio" name="kategorija"  value="3">Kategorija 3<br>
-			<input type="radio" name="kategorija"  value="4">Kategorija 4<br>
-			<input type="radio" name="kategorija"  value="5">Kategorija 5<br>
-			
-			<label for="input-adresa">Adresa:</label><br>
-			<textarea rows="6" name="adresa" id="input-adresa" required></textarea><br>
-			
-			<label for="input-drzava">Drzava:</label>
-			<select name="drzava" id="input-drzava">
-				<option value="0001">Srbija</option>
-				<option value="0002">Crna Gora</option>
-				<option value="0003">Hrvatska</option>
-				<option value="0004">Bosna i Hercegovina</option>
-				<option value="0005">Makedonija</option>
-				<option value="0006">Slovenija</option>
-			</select><br>
-			
-			<label for="i-drzava">Drzava 2:</label>
-			<input type="text" name="drzava2" id="i-drzava" list="spisak-drzava" required>
-			<datalist id="spisak-drzava">
-				<option value="Srbija">
-				<option value="Crna Gora">
-				<option value="Hrvatska">
-				<option value="Bosna i Hercegovina">
-				<option value="Makedonija">
-				<option value="Slovenija">
-			</datalist><br>
-			
-			<label for="i-opseg">Opseg:<label>
-			<input type="range" name="opseg" id="i-opseg" min="10" max="60" step="5"><br><br>
-			
-			<button type="submit">Posalji</button>
-			<button type="reset">Ponisti</button>
-		</form>
+		<div class="dark-box">
+			<form method="post" action="https://formsubmit.co/minabajjrami7@gmail.com" class="dark-box">
+				<text class="naslov">FORMULAR</text><br>
+				<!-- IME -->
+				<label for="unos-ime">Ime:</label>
+				<input type="text" id="unos-ime" name="ime"><br>
+				<!-- PREZIME -->
+				<label for="unos-prezime">Prezime:</label>
+				<input type="text" id="unos-prezime" name="prezime"><br>
+				<!-- RODJENJE -->
+				<label for="unos-rodjenje">Datum rodjenja:</label>
+				<input type="date" id="unos-rodjenje" name="rodjenje"><br>
+				<!-- DOZVOLA -->
+				<label for="unos-dozvola">Vozačka dozvola:</label><br>
+				A<input type="checkbox" id="unos-dozvola" name="A"><br>
+				B<input type="checkbox" id="unos-dozvola" name="B"><br>
+				C<input type="checkbox" id="unos-dozvola" name="C"><br>
+				D<input type="checkbox" id="unos-dozvola" name="D"><br>
+				E<input type="checkbox" id="unos-dozvola" name="E"><br>
+				<!-- JEZIK -->
+				<label for="unos-jezik">Strani jezik/jezici:</label><br>
+				Engleski<input type="checkbox" id="unos-jezik" name="engleski"><br>
+				Francuski<input type="checkbox" id="unos-jezik" name="francuski"><br>
+				Ruski<input type="checkbox" id="unos-jezik" name="ruski"><br>
+				Nemački<input type="checkbox" id="unos-jezik" name="nemački"><br>
+				Španski<input type="checkbox" id="unos-jezik" name="španski"><br>
+				<!-- MANE -->
+				Koje su vaše mane? (200+ reči)<br>
+				<textarea name="mane" cols="150" rows="30"></textarea><br>
+				<!-- DOPRINOS -->
+				Kako će te doprineti poslu? (200+ reči)<br>
+				<textarea name="mane" cols="150" rows="30"></textarea><br>
+				
+				<div align="center">
+					<input class="resetbtn" type="reset" name="reset" value="RESETUJ">
+					<input class="submitbtn" type="submit" name="posalji" value="POŠALJI">
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
